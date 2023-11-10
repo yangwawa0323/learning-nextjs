@@ -8,7 +8,9 @@ const AddToCart = () => {
 				onClick={() => {
 					console.log('clicked');
 				}}
-			></button>
+			>
+				Add to cart
+			</button>
 		</div>
 	);
 };

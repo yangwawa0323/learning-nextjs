@@ -8,6 +8,9 @@ dependencies:
   daisyui:
     specifier: ^3.9.4
     version: 3.9.4
+  fast-sort:
+    specifier: ^3.4.0
+    version: 3.4.0
   next:
     specifier: 14.0.2
     version: 14.0.2(react-dom@18.2.0)(react@18.2.0)
@@ -1176,6 +1179,10 @@ packages:
   /fast-levenshtein@2.0.6:
     resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
     dev: true
+
+  /fast-sort@3.4.0:
+    resolution: {integrity: sha512-c/cMBGA5mH3OYjaXedtLIM3hQjv+KuZuiD2QEH5GofNOZeQVDIYIN7Okc2AW1KPhk44g5PTZnXp8t2lOMl8qhQ==}
+    dev: false
 
   /fastparse@1.1.2:
     resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==}

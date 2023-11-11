@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import UserTable from './UserTable';
 
 export interface User {
@@ -28,6 +28,7 @@ const UsersPage = async ({ searchParams: { sortOrder = 'email' } }: Props) => {
 			>
 				New user
 			</Link>
+
 			<UserTable sortOrder={sortOrder} />
 		</div>
 	);

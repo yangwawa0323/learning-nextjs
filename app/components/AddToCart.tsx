@@ -5,6 +5,7 @@ const AddToCart = () => {
 	return (
 		<div>
 			<button
+				className='btn btn-error'
 				onClick={() => {
 					console.log('clicked');
 				}}

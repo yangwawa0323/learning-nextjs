@@ -7,7 +7,7 @@ interface User {
 	username: string;
 	email: string;
 	phone: string;
-	websitr: string;
+	website: string;
 	company: {
 		name: string;
 	};
@@ -22,12 +22,25 @@ const UsersPage = async () => {
 		<div>
 			<h1>Users Page</h1>
 			<Link href='/users/new'> New user</Link>
-			<p>{new Date().toLocaleTimeString()}</p>
-			<ul>
-				{users.map((user, idx) => {
-					return <li key={idx}>{user.company.name}</li>;
-				})}
-			</ul>
+
+			<table className='table table-zebra table-bordered'>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					{users.map((user, idx) => {
+						return (
+							<tr key={idx}>
+								<td>{user.company.name}</td>
+								<td>{user.email}</td>
+							</tr>
+						);
+					})}
+				</tbody>
+			</table>
 		</div>
 	);
 };

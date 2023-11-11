@@ -1,6 +1,7 @@
 import React from 'react';
 import { User } from '../page';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 interface Props {
 	params: {
@@ -10,6 +11,7 @@ interface Props {
 
 // React props , nextjs dynamic [id] => props : { params: { id: 3 } }
 const UserDetailPage = async ({ params: { id } }: Props) => {
+	if (id > 10) notFound();
 	const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
 	const user: User = await res.json();
 	return (

@@ -22,7 +22,12 @@ const UsersPage = async ({ searchParams: { sortOrder = 'email' } }: Props) => {
 	return (
 		<div>
 			<h1>Users Page</h1>
-			<Link href='/users/new'> New user</Link>
+			<Link
+				href='/users/new'
+				className='btn btn-primary'
+			>
+				New user
+			</Link>
 			<UserTable sortOrder={sortOrder} />
 		</div>
 	);
